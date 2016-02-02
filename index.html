@@ -4,76 +4,76 @@ page_template_color: blue
 navbar_brand: John
 full_name: John Smith
 email: johnsmith@example.com
-profilepic_path: assets/images/profile-picture-2.jpg
-background_image_path: assets/images/bg-hero.jpg
+profilepic_path: /assets/images/profilepic.jpg
+background_image_path: /assets/images/backgroundimg.jpg
 upload_resume_path: assets/resume.pdf
 occupations:
-    - title: Creative Developer
-    - title: UI / UX Designer
-    - title: Professional Ballerina
-    - title: Superhero Batman
+  - title: Creative Developer
+  - title: UI / UX Designer
+  - title: Professional Ballerina
+  - title: Superhero Batman
 goals:
-    - name: analytics
-      icon: plane
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - name: analytics
-      icon: plane
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - name: analytics
-      icon: plane
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-education: 
-    - number: 1
-      years: 2012-2014
-      degree: Senior Designer
-      institution: ThoughtWorks
-      description: Studied Chemical Engineering and Bioinformatics.
-    - number: 2
-      years: 2042-2022
-      degree: Senior Designer
-      institution: Brain Science
-      description: Things are different here.
-work_experience: 
-    - number: 1
-      years: 2012-2014
-      position: Senior Designer
-      company: ThoughtWorks
-      description: Studied Chemical Engineering and Bioinformatics.
-    - number: 2
-      years: 2013-2014
-      position: Engineer
-      company: Google
-      description: Things are different here
+  - name: analytics
+    icon: plane
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+  - name: analytics
+    icon: plane
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+  - name: analytics
+    icon: plane
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+education:
+  - number: 1
+    years: 2012-2014
+    degree: Senior Designer
+    institution: ThoughtWorks
+    description: Studied Chemical Engineering and Bioinformatics.
+  - number: 2
+    years: 2042-2022
+    degree: Senior Designer
+    institution: Brain Science
+    description: Things are different here.
+work_experience:
+  - number: 1
+    years: 2012-2014
+    position: Senior Designer
+    company: ThoughtWorks
+    description: Studied Chemical Engineering and Bioinformatics.
+  - number: 2
+    years: 2013-2014
+    position: Engineer
+    company: Google
+    description: Things are different here
 skills:
-    - name: Javascript
-      level: 65
-    - name: HTML/CSS
-      level: 47
-    - name: Javascript
-      level: 65
-    - name: HTML/CSS
-      level: 47
-    - name: Javascript
-      level: 65
-    - name: HTML/CSS
-      level: 47
+  - name: Javascript
+    level: 65
+  - name: HTML/CSS
+    level: 47
+  - name: Javascript
+    level: 65
+  - name: HTML/CSS
+    level: 47
+  - name: Javascript
+    level: 65
+  - name: HTML/CSS
+    level: 47
 achievements:
-    - name: Expertise Award
-      description: Outstanding social media presence
-      icon: twitter
+  - name: Expertise Award
+    description: Outstanding social media presence
+    icon: twitter
 social_icons:
-    - name: Facebook
-      link: #
-      icon: facebook
-    - name: Twitter
-      link: #
-      icon: twitter
-    - name: Instagram
-      link: #
-      icon: instagram
-    - name: Github
-      link: #
-      icon: github
+  - name: Facebook
+    link: ''
+    icon: facebook
+  - name: Twitter
+    link: ''
+    icon: twitter
+  - name: Instagram
+    link: ''
+    icon: instagram
+  - name: Github
+    link: ''
+    icon: github
 ---
 
 
@@ -169,7 +169,7 @@ social_icons:
                     <!-- PROFILE PICTURE START -->
                     <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
                         <div class="profile-picture style-two">
-                            <img src="{{ page.profilepic_path }}" alt="profile picture" class="img-responsive"/>
+                            <img src="{{ page.profilepic_path }}" alt="profile picture" class="img-responsive" />
                             
                             <h4 class="title editable">Creative Developer</h4>
                         </div>
@@ -275,8 +275,8 @@ social_icons:
                                 <p class="text-center">
                                     <i class="fa fa-{{ goal.icon }} fa-3x colored-text"></i>
                                 
-                                    <h4 class="text-center">{{ goal.name }}</h4>
-                                </p>
+                                    </p><h4 class="text-center">{{ goal.name }}</h4>
+                                <p></p>
                             
                                 <p>
                                     {{ goal.description }}
